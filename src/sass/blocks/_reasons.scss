@@ -1,3 +1,51 @@
 .reasons {
-    min-height: 800px;
+    min-height: 849px;
+    padding: 18px 0 112px 0;
+    &__wrapper {
+        margin-top: 20px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 512px);
+        grid-template-rows: repeat(4, 151px);
+        grid-auto-rows: auto;
+        column-gap: 70px;
+        row-gap: 30px;
+    }
+    &__item {
+        display: grid;
+        grid-template-columns: 116px 371px;
+        column-gap: 25px;
+    }
+    &__round    {
+        margin-top: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 116px;
+        height: 116px;
+        background: #1EACC7;
+        border-radius: 100%;
+    }
+    &__text {
+        &_mt10 {
+            margin-top: 8px;
+        }
+        &_mt15 {
+            margin-top: 15px;
+        }
+    }
+    &__subtitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 21px;
+        color: #1EACC7;
+    }
+    &__descr {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 21px;
+        color: #202020;
+    }
 }

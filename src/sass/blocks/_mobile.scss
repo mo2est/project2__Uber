@@ -1,0 +1,82 @@
+.mobile {
+    min-height: 925px;
+    &__subtitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 21px;
+        text-align: center;
+        color: #222222;
+    }
+    &__wrapper  {
+        display: grid;
+        margin-top: 30px;
+        justify-content: center;
+        grid-template-columns: repeat(3, 320px);
+        grid-template-rows: repeat(2, 280px);
+        column-gap: 67px;
+        row-gap: 19px;
+    }
+    &__item {
+        position: relative;
+        &_1 {
+            background: url('../../img/mobile/card1.png') center center/cover no-repeat;
+        }
+        &_2 {
+            background: url('../../img/mobile/card2.png') center center/cover no-repeat;
+        }
+        &_3 {
+            background: url('../../img/mobile/card3.png') center center/cover no-repeat;
+        }
+        &_4 {
+            background: url('../../img/mobile/card4.png') center center/cover no-repeat;
+        }
+        &_5 {
+            background: url('../../img/mobile/card5.png') center center/cover no-repeat;
+        }
+        &_6 {
+            background: url('../../img/mobile/card6.png') center center/cover no-repeat;
+        }
+    }
+    &__header {
+        margin-top: 88px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__round {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 34px;
+        transform: translateX(-50%);
+        left: 50%;
+        width: 29px;
+        height: 29px;
+        background: #000000;
+        border-radius: 100%;
+        cursor: pointer;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            transform: translateX(-50%);
+            left: 50%;
+            width: 2px;
+            height: 14px;
+            background: #1EACC7;
+        }
+        &::after {
+            content: '';
+            display: block;
+            width: 14px;
+            height: 2px;
+            background: #1EACC7;
+        }
+    }
+}
