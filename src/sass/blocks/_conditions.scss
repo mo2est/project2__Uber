@@ -1,0 +1,61 @@
+.conditions {
+    min-height: 917px;
+    padding: 66px 0 87px 0;
+    &__wrapper {
+        margin-top: 37px;
+        display: grid;
+        grid-template-columns: repeat(2, 550px);
+        grid-template-rows: 353px 215px;
+        column-gap: 51px;
+        row-gap: 61px;
+        grid-auto-rows: auto;
+        justify-content: center;
+    }
+    &__header {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 22px;
+        color: #1CA8C3;
+        &.red {
+            color:#FF5656;
+        }
+    }
+    &__menu {
+        margin-top: 20px;
+        list-style-type: none;
+    }
+    &__item {
+        margin-top: 8px;
+        position: relative;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 24px;
+        padding-left: 50px;
+        color: #222222;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 12px;
+            top: 3px;
+            display: block;
+            width: 21px;
+            height: 20px;
+            background: url('../../icons/Rectangle.png') center center/cover no-repeat;
+        }
+        &.red {
+            &:before {
+                background: url('../../icons/Rectangle\ red.png') center center/cover no-repeat;
+            }
+        }
+    &__text {
+        margin-top: 25px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 24px;
+        color: #1CA8C3;
+    }
+}
+}

@@ -1,0 +1,81 @@
+.footer {
+    height: 150px;
+    padding: 12px  20px 33px 20px ;
+    &__divider {
+        display: block;
+        width: 301px;
+        height: 7px;
+        background: #1FBAD6;
+        margin: 0 auto;
+    } 
+    &__wrapper {
+        margin-top: 31px;
+        display: grid; 
+        grid-template-columns: repeat(3, 33%);
+        grid-template-rows: 70px;
+        justify-content: center;
+    }
+    &__social {
+        width: 156px;
+        display: flex;
+        justify-content: space-between;
+        &-item {
+            background-color: black;
+            width: 32px;
+            height: 32px;
+            border-radius: 100%;
+            span {
+                color: white;
+            }
+        }
+    }
+    &__menu {
+        text-align: center;
+    }
+    &__main {
+        margin: 0 auto;
+        width: 365px;
+        display: flex;
+        justify-content: space-between;
+        a {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #070716;
+        }
+    }
+    &__other {
+        margin: 0 auto;
+        width: 390px;
+        display: flex;
+        justify-content: space-between;
+        a {
+            margin-top: 10px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #999999;
+        }
+    }
+    &__lang {
+        margin-top: 18px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #1FBAD6;
+    }
+    &__market {
+        width: 296px;
+        display: flex;
+        justify-content: space-between;
+        justify-self: end;
+        &-link {
+            height: 26px;
+        }
+    }
+}
+

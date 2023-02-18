@@ -7,7 +7,11 @@
     text-align: center;
     text-transform: uppercase;
     color: #222222;
-    &__choice {
+    &__choice, &__world {
         color: white;
+    }
+    &__conditions {
+        margin-top: 27px;
+        margin-bottom: 0;
     }
 }
