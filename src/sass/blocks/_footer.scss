@@ -5,7 +5,7 @@
         display: block;
         width: 301px;
         height: 7px;
-        background: #1FBAD6;
+        background: $main-color;
         margin: 0 auto;
     } 
     &__wrapper {
@@ -20,12 +20,16 @@
         display: flex;
         justify-content: space-between;
         &-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: black;
             width: 32px;
             height: 32px;
             border-radius: 100%;
-            span {
-                color: white;
+            cursor: pointer;
+            &:hover {
+                text-decoration: none;
             }
         }
     }

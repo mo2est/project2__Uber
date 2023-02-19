@@ -43,6 +43,13 @@ header {
             grid-template-rows: 49px;
             justify-content: center;
         }
+        &__text {
+            margin-top: 2px;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 13px;
+            color: #FFFFFF;
+        }
         &__phone  {
             display: grid;
             grid-template-columns: 187px 162px;
@@ -68,7 +75,7 @@ header {
         &__btn {
             width: 172px;
             height: 46px;
-            background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+            background: linear-gradient(0deg, $main-color 0%, #4CE2FF 100%);
             box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
             border-radius: 4px;
             font-style: normal;
@@ -78,6 +85,7 @@ header {
             color: #FFFFFF;
             text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
             border: none;
+            @include btn_hover;
         }
     }
 

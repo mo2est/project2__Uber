@@ -63,6 +63,7 @@
         background: #000000;
         border-radius: 100%;
         cursor: pointer;
+        @include plus_hover;
         &::before {
             content: '';
             display: block;
@@ -71,14 +72,14 @@
             left: 50%;
             width: 2px;
             height: 14px;
-            background: #1EACC7;
+            background: $main-color;
         }
         &::after {
             content: '';
             display: block;
             width: 14px;
             height: 2px;
-            background: #1EACC7;
+            background: $main-color;
         }
     }
 }
